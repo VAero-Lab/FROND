@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frond"
+version = "0.1.0"
+description = "Generalized Bio-Inspired Structural Optimization using Fractal/Tree-like Morphogenesis"
+authors = [
+    {name = "Victor Alulema"},
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "numba",
+    "shapely"
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "flake8",
+    "black",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["frond*"]
