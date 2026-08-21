@@ -1,0 +1,66 @@
+# ── Python ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.installed.cfg
+
+# ── Environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ── Tooling caches ────────────────────────────────────────────────────
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+.ipynb_checkpoints/
+
+# ── Generated results (regenerable — never commit) ────────────────────
+# Run scripts write here; figures promoted to the paper go in docs/figures/.
+results/
+runs/
+*.npz
+*.npy
+*.vtk
+*.vtu
+
+# Loose generated figures at repo root. Curated figures live in docs/
+# and are tracked explicitly via the negations at the bottom.
+/*.png
+/*.pdf
+/*.gif
+/*.svg
+
+# ── Scratch / session artefacts (never commit) ────────────────────────
+scratch/
+sandbox/
+tmp/
+*.log
+.claude/
+CLAUDE.local.md
+*.session.md
+
+# ── OS / editor ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# ── Tracked exceptions ────────────────────────────────────────────────
+!docs/**/*.png
+!docs/**/*.pdf
+!docs/**/*.svg

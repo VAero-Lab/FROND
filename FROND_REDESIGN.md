@@ -1,6 +1,6 @@
 # FROND — Assessment and Redesign Plan
 
-Status: written after auditing `frond/` (1426 LOC), `FROND_CONCEPTS.md`, `frond.png`,
+Status: written after auditing `frond/` (1426 LOC), `FROND_CONCEPTS.md`, `docs/frond_concept_sketch.png`,
 and running the pipeline on the L-bracket benchmark.
 
 ---
@@ -120,7 +120,7 @@ compliance = 0.0138, volume = 6895
 9. **Retroactive Murray on a graph with cycles is ill-posed.** `apply_murrays_law` recurses
    with a `visited` set that returns `base_flow` on cycle detection — an arbitrary
    tie-break, not a conservation law. Result: 21.7× thickness range and the black blobs in
-   `test_pruned.png`.
+   `docs/legacy/legacy_sca_pruned.png`.
 
 10. **Pruning uses the wrong anchoring test.** `prune_dangling` keeps any leaf within 2.0 of
     *any* boundary — including non-material geometric boundaries, which react against
